@@ -17,29 +17,42 @@ public class Condition {
 //			System.out.println("number is smaller than two");
 //		}
 //	}
+//	public static void main(String[] args) {
+//		
+//		int date = 22;
+//		int doy = 2000;
+//		int age = 22;
+//		int nest = 100000;
+//		int totalage = date + doy;
+//		if( totalage == doy+ date) {
+//			
+//			if(totalage > age) {
+//				if(nest > totalage) {
+//					System.out.println("exact nmber");
+//				}
+//				else
+//				{
+//					System.out.println("invalid");
+//				}
+//			}
+//		}
+//		else
+//		{
+//			System.out.println("not valid");
+//		}
+//	}
+	
+	
 	public static void main(String[] args) {
+		Scanner scanner =new Scanner(System.in);
 		
-		int date = 22;
-		int doy = 2000;
-		int age = 22;
-		int nest = 100000;
-		int totalage = date + doy;
-		if( totalage == doy+ date) {
-			
-			if(totalage > age) {
-				if(nest > totalage) {
-					System.out.println("exact nmber");
-				}
-				else
-				{
-					System.out.println("invalid");
-				}
-			}
+		System.out.println("Enter the Year");
+		int year =scanner.nextInt();
+		if((year%4)==0) {
+			System.out.println("this is a leap year");
 		}
-		else
-		{
-			System.out.println("not valid");
+		else  {
+			System.out.println("this is a non-leap year");
 		}
 	}
-	
 }
